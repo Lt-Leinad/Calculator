@@ -1,169 +1,170 @@
 html {
-  background: linear-gradient(
-    180deg,
-    rgb(75, 119, 224) 0%,
-    rgb(122, 155, 232) 50%,
-    rgb(176, 193, 234) 100%
-  );
-  height: 100vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-.calculator {
-  display: grid;
-  grid-template-columns: repeat(1fr, 4);
-  grid-template-rows: repeat(1fr, 7);
-  background-color: lightblue;
-  width: 250px;
-  height: 420px;
-  margin: 0;
-  border: 5px solid whitesmoke;
-  margin: 5px;
-}
-
-.deleteBtn {
-  font-size: 1rem;
-}
-
-button {
-  background-color: transparent;
-  border: 2px solid whitesmoke;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 700;
-  font-size: 2rem;
-  height: 70px;
-  color: rgb(102, 113, 128);
-}
-
-button:hover {
-  cursor: pointer;
-  background-color: rgb(200, 225, 233);
-}
-
-button:active {
-  background-color: aliceblue;
-}
-
-.display {
-  width: 100%;
-  height: 70px;
-  grid-column: 1/5;
-  grid-row: 1/3;
-  text-align: right;
-  border: 2px solid whitesmoke;
-  font-size: 3rem;
-  color: rgb(102, 113, 128);
-  overflow: hidden;
-}
-
-.clearBtn {
-  grid-row: 3/4;
-  grid-column: 1/3;
-}
-
-.deleteBtn {
-  grid-row: 3/4;
-  grid-column: 3/4;
-}
-
-.zeroBtn {
-  grid-row: 7/8;
-  grid-column: 1/3;
-}
-
-.oneBtn {
-  grid-row: 6/7;
-  grid-column: 1/2;
-}
-
-.twoBtn {
-  grid-row: 6/7;
-  grid-column: 2/3;
-}
-
-.threeBtn {
-  grid-row: 6/7;
-  grid-column: 3/4;
-}
-
-.fourBtn {
-  grid-row: 5/6;
-  grid-column: 1/2;
-}
-
-.fiveBtn {
-  grid-row: 5/6;
-  grid-column: 2/3;
-}
-
-.sixBtn {
-  grid-row: 5/6;
-  grid-column: 3/4;
-}
-
-.sevenBtn {
-  grid-row: 4/5;
-  grid-column: 1/2;
-}
-
-.eightBtn {
-  grid-row: 4/5;
-  grid-column: 2/3;
-}
-
-.nineBtn {
-  grid-row: 4/5;
-  grid-column: 3/4;
-}
-
-.pointBtn {
-  grid-row: 7/8;
-  grid-column: 3/4;
-}
-
-.addBtn {
-  grid-row: 6/7;
-  grid-column: 4/5;
-}
-
-.minusBtn {
-  grid-row: 5/6;
-  grid-column: 4/5;
-}
-
-.timesBtn {
-  grid-row: 4/5;
-  grid-column: 4/5;
-}
-
-.divideBtn {
-  grid-row: 3/4;
-  grid-column: 4/5;
-}
-
-.equalsBtn {
-  grid-row: 7/8;
-  grid-column: 4/5;
-}
-
-@media only screen and (max-width: 300px) {
-  /* For mobile phones: */
+    background: linear-gradient(
+      180deg,
+      rgb(75, 119, 224) 0%,
+      rgb(122, 155, 232) 50%,
+      rgb(176, 193, 234) 100%
+    );
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
   .calculator {
-    margin-top: -3rem;
-    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: repeat(1fr, 7);
+    background-color: lightblue;
+    width: 250px;
+    height: 420px;
+    margin: 0;
+    border: 5px solid whitesmoke;
+    margin: 5px;
   }
+  
+  .deleteBtn {
+    font-size: 2rem;
+  }
+  
   button {
-    height: 14.5vh;
+    background-color: transparent;
+    border: 2px solid whitesmoke;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    height: 70px;
+    color: rgb(102, 113, 128);
   }
-
+  
+  button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 225, 233);
+  }
+  
+  button:active {
+    background-color: aliceblue;
+  }
+  
   .display {
-    height: 16.7vh;
+    width: 245px;
+    height: 70px;
+    padding-right: 5px;
+    grid-column: 1/5;
+    grid-row: 1/3;
+    text-align: right;
+    border: 2px solid whitesmoke;
+    font-size: 3rem;
+    color: rgb(102, 113, 128);
+    overflow: hidden;
   }
-
-  html {
-    height: 110vh;
-    overflow: clip;
+  
+  .clearBtn {
+    grid-row: 3/4;
+    grid-column: 1/3;
   }
-}
+  
+  .deleteBtn {
+    grid-row: 3/4;
+    grid-column: 3/4;
+  }
+  
+  .zeroBtn {
+    grid-row: 7/8;
+    grid-column: 1/3;
+  }
+  
+  .oneBtn {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+  
+  .twoBtn {
+    grid-row: 6/7;
+    grid-column: 2/3;
+  }
+  
+  .threeBtn {
+    grid-row: 6/7;
+    grid-column: 3/4;
+  }
+  
+  .fourBtn {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  
+  .fiveBtn {
+    grid-row: 5/6;
+    grid-column: 2/3;
+  }
+  
+  .sixBtn {
+    grid-row: 5/6;
+    grid-column: 3/4;
+  }
+  
+  .sevenBtn {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  
+  .eightBtn {
+    grid-row: 4/5;
+    grid-column: 2/3;
+  }
+  
+  .nineBtn {
+    grid-row: 4/5;
+    grid-column: 3/4;
+  }
+  
+  .pointBtn {
+    grid-row: 7/8;
+    grid-column: 3/4;
+  }
+  
+  .addBtn {
+    grid-row: 6/7;
+    grid-column: 4/5;
+  }
+  
+  .minusBtn {
+    grid-row: 5/6;
+    grid-column: 4/5;
+  }
+  
+  .timesBtn {
+    grid-row: 4/5;
+    grid-column: 4/5;
+  }
+  
+  .divideBtn {
+    grid-row: 3/4;
+    grid-column: 4/5;
+  }
+  
+  .equalsBtn {
+    grid-row: 7/8;
+    grid-column: 4/5;
+  }
+  
+  @media only screen and (max-width: 300px) {
+    /* For mobile phones: */
+    .calculator {
+      margin-top: -3rem;
+      height: 90vh;
+    }
+    button {
+      height: 14.5vh;
+    }
+  
+    .display {
+      height: 16.7vh;
+    }
+  
+    html {
+      height: 110vh;
+      overflow: clip;
+    }
+  }
