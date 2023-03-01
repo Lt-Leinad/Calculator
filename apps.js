@@ -97,13 +97,7 @@ minusBtn.addEventListener("click", inputOperator);
 timesBtn.addEventListener("click", inputOperator);
 divideBtn.addEventListener("click", inputOperator);
 
-clearBtn.addEventListener("click", function () {
-  previousOperand = "";
-  currentOperand = "";
-  previousOperator = "";
-  currentOperator = "";
-  display.textContent = currentOperand;
-});
+clearBtn.addEventListener("click", clear);
 
 deleteBtn.addEventListener("click", function () {
   let arr = display.textContent.split("");
@@ -130,6 +124,16 @@ equalsBtn.addEventListener("click", function () {
 
 function tooBig() {
   if (display.textContent.length > 10) {
-    Math.trunc(Number(display.textContent) * 100000000);
+    alert("Number Too Large");
+    clear();
+    
   }
+}
+
+function clear() {
+        previousOperand = "";
+        currentOperand = "";
+        previousOperator = "";
+        currentOperator = "";
+        display.textContent = currentOperand;
 }
